@@ -7,8 +7,9 @@ const Contact = () => {
 		<section id="contact" className="scroll-mt-24 relative bg-[#020617] py-24 text-white">
 
 			{/* Background Glow */}
-			<div className="absolute top-10 left-10 h-[250px] w-[250px] rounded-full bg-cyan-500 opacity-20 blur-[100px]"></div>
-			<div className="absolute bottom-10 right-10 h-[250px] w-[250px] rounded-full bg-purple-500 opacity-20 blur-[100px]"></div>
+			<div className="pointer-events-none absolute top-10 left-10 h-[250px] w-[250px] rounded-full bg-cyan-500 opacity-20 blur-[100px]"></div>
+
+			<div className="pointer-events-none absolute bottom-10 right-10 h-[250px] w-[250px] rounded-full bg-purple-500 opacity-20 blur-[100px]"></div>
 
 			<div className="mx-auto max-w-6xl px-6">
 
