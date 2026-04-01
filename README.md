@@ -2,7 +2,7 @@
 
 A modern, responsive developer portfolio showcasing my backend-focused projects, problem-solving skills, and system design approach.
 
-🔗 Live: (add after deploy)
+🔗 Live: https://k-portfolio-virid.vercel.app/
 
 ---
 
