@@ -1,16 +1,47 @@
-# React + Vite
+# 🚀 Krishna Arora — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive developer portfolio showcasing my backend-focused projects, problem-solving skills, and system design approach.
 
-Currently, two official plugins are available:
+🔗 Live: (add after deploy)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🧠 About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I’m a Backend Developer focused on building efficient systems and solving complex problems using strong foundations in Data Structures, Algorithms, and scalable design.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- **Languages:** C++, Python, SQL  
+- **Backend:** Flask, REST APIs  
+- **Database:** SQL, PostgreSQL  
+- **Tools:** Git, GitHub, Vercel  
+
+---
+
+## 📌 Featured Projects
+
+### 🔹 UAOS — Unified AI Automation Operating System
+- Backend-driven automation system  
+- Workflow execution engine with retry & timeout handling  
+- API-based automation architecture  
+
+### 🔹 Brain Computer Interface Prototype
+- Signal-based interaction system  
+- Real-time processing logic  
+
+### 🔹 Stock Price Prediction System
+- LSTM-based model  
+- Data preprocessing & evaluation  
+
+---
+
+## ⚙️ Run Locally
+
+```bash
+git clone https://github.com/your-username/k-portfolio.git
+cd k-portfolio
+npm install
+npm run dev
