@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 
-
 const sections = ["home", "about", "projects", "skills", "contact"];
 
 const Navbar = () => {
 	const [active, setActive] = useState("home");
 	const [scrolled, setScrolled] = useState(false);
+	const [open, setOpen] = useState(false); // ✅ correct place
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -35,6 +35,7 @@ const Navbar = () => {
 					: "bg-transparent"
 			}`}
 		>
+			{/* 🔹 Top Bar */}
 			<div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
 
 				{/* Logo */}
@@ -46,9 +47,8 @@ const Navbar = () => {
 					/>
 				</a>
 
-				{/* Links */}
+				{/* Desktop Links */}
 				<div className="hidden md:flex gap-8 text-sm">
-
 					{sections.map((section) => (
 						<a
 							key={section}
@@ -61,7 +61,6 @@ const Navbar = () => {
 						>
 							{section.charAt(0).toUpperCase() + section.slice(1)}
 
-							{/* Underline animation */}
 							<span
 								className={`absolute left-0 -bottom-1 h-[2px] bg-cyan-400 transition-all duration-300 ${
 									active === section ? "w-full" : "w-0 group-hover:w-full"
@@ -69,9 +68,32 @@ const Navbar = () => {
 							></span>
 						</a>
 					))}
-
 				</div>
+
+				{/* Mobile Menu Button */}
+				<button
+					className="md:hidden text-white text-2xl"
+					onClick={() => setOpen(!open)}
+				>
+					☰
+				</button>
 			</div>
+
+			{/* 🔹 Mobile Dropdown (OUTSIDE container ✅) */}
+			{open && (
+				<div className="md:hidden bg-[#020617] border-t border-slate-800 px-6 py-4 space-y-4">
+					{sections.map((section) => (
+						<a
+							key={section}
+							href={`#${section}`}
+							onClick={() => setOpen(false)}
+							className="block text-slate-300 hover:text-cyan-400 transition"
+						>
+							{section.charAt(0).toUpperCase() + section.slice(1)}
+						</a>
+					))}
+				</div>
+			)}
 		</nav>
 	);
 };
